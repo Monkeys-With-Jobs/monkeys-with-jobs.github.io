@@ -5,27 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Monkeys With Jobs">
-    <title>🐒 Monkeys With Jobs</title>
+    <link rel="icon" href="favicon.png">
+    <title>Monkeys With Jobs</title>
     <style>
         html, body {
             height: 100%;
             font-size: 1.5rem;
-	    margin: 0;
-	    padding: 0;
-	    text-align: center;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
 
-        .container {
-            height: 100%;
+        body {
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #27282C;
+        }
+
+        .logo {
+            width: 50vw;
+        }
+
+        @media (min-width: 500px) {
+            .logo {
+                width: 33vw;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        🙈 🔨 🙉 🔧 🙊
-    </div>
+    <img class="logo" src="logo.svg" alt="Monkeys With Jobs Logo">
 </body>
 </html>
