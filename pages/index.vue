@@ -1,5 +1,5 @@
 <template>
-  <span>Yellow</span>
+  <span>Monkeys With Jobs</span>
 </template>
 
 <script lang="ts">

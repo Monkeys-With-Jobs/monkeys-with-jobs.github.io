@@ -22,13 +22,13 @@ export default {
       { property: 'og:image', content: 'https://monkeyswithjobs.com/logo.png' }
     ],
     link: [
-      { rel: 'stylesheet', href: '/css/bootstrap.min.css' },
       { rel: 'icon', href: '/favicon.png' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -50,9 +50,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
-
-  server: {
-    host: '0.0.0.0'
   }
 }
