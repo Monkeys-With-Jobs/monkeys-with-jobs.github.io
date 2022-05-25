@@ -1,5 +1,5 @@
 <template>
-  <Tutorial/>
+  <span>Yellow</span>
 </template>
 
 <script lang="ts">
