@@ -1,3 +1,3 @@
 <template>
-  <span>games</span>
+  <span>about</span>
 </template>

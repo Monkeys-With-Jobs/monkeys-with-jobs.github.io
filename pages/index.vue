@@ -1,5 +1,5 @@
 <template>
-  <span>Monkeys With Jobs</span>
+  <span>index</span>
 </template>
 
 <script lang="ts">
