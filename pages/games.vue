@@ -1,3 +1,0 @@
-<template>
-  <span>games</span>
-</template>
