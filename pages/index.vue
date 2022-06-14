@@ -2,7 +2,7 @@
   <section>
     <div class="container p-5">
       <div class="px-4 py-5 text-center">
-        <img class="d-block mx-auto mb-5" src="/images/logo.svg" alt="Monkeys With Jobs Logo">
+        <img class="d-block mx-auto mb-5 img-fluid" src="/images/logo.svg" alt="Monkeys With Jobs Logo">
         <div class="mx-auto">
           <h2>Creating games</h2>
 
