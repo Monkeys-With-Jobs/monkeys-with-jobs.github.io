@@ -69,6 +69,8 @@ export default {
         'faYoutube',
         'faTwitter',
         'faInstagram',
+        'faSteam',
+        'faItchIo'
       ]
     }
   },

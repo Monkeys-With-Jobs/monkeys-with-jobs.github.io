@@ -4,8 +4,10 @@
       <div class="px-4 py-5 text-center">
         <img class="d-block mx-auto mb-5" src="/images/logo.svg" alt="Monkeys With Jobs Logo">
         <div class="mx-auto">
+          <h2>Creating games</h2>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam dolores asperiores mollitia distinctio enim quidem natus. Nemo, blanditiis aperiam commodi atque placeat hic provident quaerat sit, voluptatem laudantium reprehenderit quidem.
+            <em>Monkeys With Jobs</em> is an Austrian indie game development studio founded in 2022.
           </p>
         </div>
       </div>
@@ -18,9 +20,3 @@
     height: 20rem;
   }
 </style>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-</script>

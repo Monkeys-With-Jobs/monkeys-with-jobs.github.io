@@ -13,9 +13,6 @@
             <NuxtLink class="nav-link" :aria-current="currentPage == 'index' ? 'page' : null" to="/">Home</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link" :aria-current="currentPage == 'about' ? 'page' : null" to="/about">About</NuxtLink>
-          </li>
-          <li class="nav-item">
             <NuxtLink class="nav-link" :aria-current="currentPage == 'games' ? 'page' : null" to="/games">Games</NuxtLink>
           </li>
           <li class="nav-item">
