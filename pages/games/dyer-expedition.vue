@@ -1,12 +1,14 @@
 <template>
   <section>
     <div class="container">
-      <div class="row g-5">
-        <div class="col-6">
-          <img src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
         </div>
-        <div class="col-6">
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -32,3 +34,10 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+iframe {
+  height: 100%;
+  width: 100%;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <NuxtLink class="navbar-brand" to="/">
         <img src="/images/logo_no_text.svg" alt="Monkeys With Jobs Logo" width="30" height="24">
