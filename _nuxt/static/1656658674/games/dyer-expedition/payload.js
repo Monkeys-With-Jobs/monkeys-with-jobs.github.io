@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/games/dyer-expedition", {data:[{}],fetch:{},mutations:void 0});
