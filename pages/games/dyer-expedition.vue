@@ -30,7 +30,7 @@
         <font-awesome-icon :icon="['fab', 'itch-io']" fixed-width /> Itch.io &ndash; <a href="https://retzudo.itch.io/dyer-expedition" rel="noopener noreferrer" target="_blank">https://retzudo.itch.io/dyer-expedition</a>
       </p>
 
-      <p>Follow us on <a href="https://twitter.com/monkeyswithjobs" rel="noopener noreferrer" target="_blank">Twitter</a> and join our <a href="https://discord.gg/XXzPyCJECu" rel="noopener noreferrer" target="_blank">Discord Server</a> to get updates!</p>
+      <p>Follow us on <a href="https://twitter.com/monkeyswithjobs" rel="noopener noreferrer" target="_blank">Twitter</a> or <a href="https://instagram.com/monkeyswithjobs" rel="noopener noreferrer" target="_blank">Instagram</a> and join our <a href="https://discord.gg/XXzPyCJECu" rel="noopener noreferrer" target="_blank">Discord Server</a> to get updates!</p>
     </div>
   </section>
 </template>

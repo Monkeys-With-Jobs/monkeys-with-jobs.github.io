@@ -4,14 +4,39 @@
 
     <div class="row">
       <div class="col-lg">
-        <h2>Monkeys With Jobs e. U.</h2>
+        <h2>Monkeys With Jobs</h2>
         <dl>
-          <dt>Geschäftsführer</dt>
+          <dt>Name</dt>
           <dd>Christoph Willinger, MSc</dd>
 
           <dt>Rechtsform</dt>
           <dd>Einzelunternehmen</dd>
 
+          <dt>Adresse</dt>
+          <dd>
+            <address>
+              Schärdinger Straße 29<br>
+              A-4910 Ried im Innkreis<br>
+              Österreich
+            </address>
+          </dd>
+
+          <dt>Unternehmensgegenstand</dt>
+          <dd>Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik</dd>
+
+          <dt>Mitgliedschaften</dt>
+          <dd>Mitglied der WKOÖ</dd>
+
+          <dt>Gewerbeordnung</dt>
+          <dd><a href="https://www.ris.bka.gv.at/" rel="noopener noreferrer" target="_blank">www.ris.bka.gv.at</a></dd>
+
+          <dt>Aufsichtsbehörde</dt>
+          <dd>Bezirkshauptmannschaft Ried im Innkreis</dd>
+
+          <dt>Kontakt</dt>
+          <dd><a href="mailto:hello@monkeyswithjobs.com">hello@monkeyswithjobs.com</a></dd>
+
+          <!--
           <dt>Firmenbuchnummer</dt>
           <dd>FN ??????</dd>
 
@@ -21,18 +46,12 @@
           <dt>Sitz</dt>
           <dd>Ried im Innkreis</dd>
 
+
           <dt>UID</dt>
           <dd>ATU??????</dd>
+          -->
         </dl>
 
-        <address>
-          Monkeys With Jobs e. U.<br>
-          Christoph Willinger, MSc<br>
-          Schärdinger Straße 29<br>
-          4910 Ried im Innkreis<br>
-          Austria
-        </address>
-        <a href="mailto:hello@monkeyswithjobs.com">hello@monkeyswithjobs.com</a>
       </div>
 
       <div class="col-lg d-none d-lg-block">
