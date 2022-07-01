@@ -32,12 +32,14 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~assets/scss/main.scss'
+    '~assets/scss/main.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/bootstrap.js', mode: 'client' }
+    { src: '~/plugins/bootstrap.js', mode: 'client' },
+    '~/plugins/fontawesome.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -46,8 +48,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-    '@nuxtjs/fontawesome',
+    '@nuxt/typescript-build'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -56,23 +57,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
-
-  fontawesome: {
-    icons: {
-      solid: [
-        'faEnvelope'
-      ],
-      brands: [
-        'faTiktok',
-        'faDiscord',
-        'faYoutube',
-        'faTwitter',
-        'faInstagram',
-        'faSteam',
-        'faItchIo'
-      ]
-    }
   },
 
   loading: {
