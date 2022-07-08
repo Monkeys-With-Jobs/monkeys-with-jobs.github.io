@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Monkeys With Jobs e. U.',
+    title: 'Monkeys With Jobs',
     htmlAttrs: {
       lang: 'en'
     },
