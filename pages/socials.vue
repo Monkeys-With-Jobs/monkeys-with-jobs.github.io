@@ -32,6 +32,12 @@
       </h2>
 
       <h2 class="m-4">
+        <a href="https://www.twitch.tv/m0nkeyswithjobs" target="_blank">
+          <font-awesome-icon :icon="['fab', 'twitch']" fixed-width /> Twitch
+        </a>
+      </h2>
+
+      <h2 class="m-4">
         <a href="mailto:hello@monkeyswithjobs.com" rel="noopener noreferrer" target="_blank">
           <font-awesome-icon icon="envelope" fixed-width /> E-mail
         </a>
