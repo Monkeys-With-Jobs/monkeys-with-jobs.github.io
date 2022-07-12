@@ -33,6 +33,9 @@
           <dt>Aufsichtsbehörde</dt>
           <dd>Bezirkshauptmannschaft Ried im Innkreis</dd>
 
+          <dt>UID</dt>
+          <dd>ATU78294515</dd>
+
           <dt>Kontakt</dt>
           <dd><a href="mailto:hello@monkeyswithjobs.com">hello@monkeyswithjobs.com</a></dd>
 
@@ -45,10 +48,6 @@
 
           <dt>Sitz</dt>
           <dd>Ried im Innkreis</dd>
-
-
-          <dt>UID</dt>
-          <dd>ATU??????</dd>
           -->
         </dl>
 
