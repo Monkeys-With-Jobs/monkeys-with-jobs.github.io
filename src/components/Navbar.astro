@@ -1,0 +1,31 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPage = pathname.slice(1);
+---
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo_no_text.svg" alt="Monkeys With Jobs Logo" width="30" height="24">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarToggler" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class={`nav-link ${currentPage == 'index' ? 'active' : null}`} aria-current={currentPage == 'index' ? 'page' : null} href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class={`nav-link ${currentPage == 'games' ? 'active' : null}`} aria-current={currentPage == 'games' ? 'page' : null} href="/games">Games</a>
+        </li>
+        <li class="nav-item">
+          <a class={`nav-link ${currentPage == 'socials' ? 'active' : null}`} aria-current={currentPage == 'socials' ? 'page' : null} href="/socials">Socials &amp; Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class={`nav-link ${currentPage == 'imporint' ? 'active' : null}`} aria-current={currentPage == 'imprint' ? 'page' : null} href="/imprint">Imprint</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+

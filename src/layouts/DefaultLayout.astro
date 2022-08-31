@@ -1,0 +1,25 @@
+---
+import './main.scss';
+import Navbar from '../components/Navbar.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Monkeys With Jobs</title>
+    <meta charset="utf-8">
+    <meta httpequiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-hid="description" name="description" content="Game studio based in Austria">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="Monkeys With Jobs">
+    <meta property="og:title" content="Monkeys With Jobs">
+    <meta property="og:url" content="https://monkeyswithjobs.com">
+    <meta property="og:description" content="Game studio based in Austria">
+    <meta property="og:type" content="business.business">
+    <meta property="og:image" content="https://monkeyswithjobs.com/logo.png">
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+  </body>
+</html>
