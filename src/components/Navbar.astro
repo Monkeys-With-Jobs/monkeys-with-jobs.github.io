@@ -3,6 +3,11 @@ const pathname = new URL(Astro.request.url).pathname;
 const currentRoute = pathname.slice(1);
 const currentActiveNaivation = currentRoute.split('/')[0]
 ---
+
+<script>
+  import 'bootstrap/js/dist/collapse';
+</script>
+
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
