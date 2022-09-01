@@ -1,6 +1,7 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
-const currentPage = pathname.slice(1);
+const currentRoute = pathname.slice(1);
+const currentActiveNaivation = currentRoute.split('/')[0]
 ---
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
@@ -13,16 +14,16 @@ const currentPage = pathname.slice(1);
     <div id="navbarToggler" class="collapse navbar-collapse">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class={`nav-link ${currentPage == 'index' ? 'active' : null}`} aria-current={currentPage == 'index' ? 'page' : null} href="/">Home</a>
+          <a class={`nav-link ${currentActiveNaivation == '' ? 'active' : null}`} aria-current={currentActiveNaivation == 'index' ? 'page' : null} href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class={`nav-link ${currentPage == 'games' ? 'active' : null}`} aria-current={currentPage == 'games' ? 'page' : null} href="/games">Games</a>
+          <a class={`nav-link ${currentActiveNaivation == 'games' ? 'active' : null}`} aria-current={currentActiveNaivation == 'games' ? 'page' : null} href="/games">Games</a>
         </li>
         <li class="nav-item">
-          <a class={`nav-link ${currentPage == 'socials' ? 'active' : null}`} aria-current={currentPage == 'socials' ? 'page' : null} href="/socials">Socials &amp; Contact</a>
+          <a class={`nav-link ${currentActiveNaivation == 'socials' ? 'active' : null}`} aria-current={currentActiveNaivation == 'socials' ? 'page' : null} href="/socials">Socials &amp; Contact</a>
         </li>
         <li class="nav-item">
-          <a class={`nav-link ${currentPage == 'imporint' ? 'active' : null}`} aria-current={currentPage == 'imprint' ? 'page' : null} href="/imprint">Imprint</a>
+          <a class={`nav-link ${currentActiveNaivation == 'imprint' ? 'active' : null}`} aria-current={currentActiveNaivation == 'imprint' ? 'page' : null} href="/imprint">Imprint</a>
         </li>
       </ul>
     </div>
