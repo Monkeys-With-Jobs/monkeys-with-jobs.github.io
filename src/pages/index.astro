@@ -1,137 +1,24 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
-import '@fortawesome/fontawesome-free/css/all.min.css'
 ---
 
 <style>
-  .section--with-background {
-    position: relative;
-  }
-
-  .section--with-background:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-size: cover;
-    filter: brightness(25%);
-  }
-
-  .section--with-background * {
-    position: relative;
-  }
-
-  .section-header {
-    height: 80vh;
-  }
-
-  .section-header:before {
-    background-image: url('/images/background-header.webp');
-  }
-
-  .section-dyer:before {
-    background-image: url('/images/background-dyer.webp');
-    filter: brightness(75%);
-  }
-
-  .section-code:before {
-    background-image: url('/images/background-code.webp');
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .logo {
+  img {
     max-height: 20rem;
   }
 </style>
 
 <DefaultLayout>
-  <section class="p-5 section section--with-background section-header d-flex flex-column justify-content-center align-items-center">
-    <img class="d-block mx-auto mb-5 img-fluid logo" src="/images/logo.svg" alt="Monkeys With Jobs Logo">
-    <div class="text-center">
-      <h2>Creating games and software</h2>
-      <p>
-        <em>Monkeys With Jobs</em> is an Austrian indie game and software development studio founded in 2022.
-      </p>
-    </div>
-  </section>
-
-  <section class="p-5 section section--with-background section-dyer d-flex align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg text-center p-5">
-          <img src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
-        </div>
-        <div class="col-lg">
-          <h2>Dyer Expedition</h2>
+  <section>
+    <div class="container p-5">
+      <div class="px-4 py-5 text-center">
+        <img class="d-block mx-auto mb-5 img-fluid" src="/images/logo.svg" alt="Monkeys With Jobs Logo">
+        <div class="mx-auto">
+          <h2>Creating games</h2>
 
           <p>
-            <strong>
-              Dyer Expedition is a puzzle adventure game with light Lovecraftian horror elements and a story inspired by Lovecraft's 1931 novella At the Mountains of Madness.
-            </strong>
+            <em>Monkeys With Jobs</em> is an Austrian indie game development studio founded in 2022.
           </p>
-
-          <p>
-            It's 1931 and Antarctic continent is still a new scientific frontier. The Miskatonic University of Massachusetts has launched an expedition, led by William Dyer, to excavate fossils and find concrete evidence for scientific hypotheses about the land. The expedition arrived on an island in the Antarctic region but contact was soon lost as their supply ship returned to an all but abandoned base camp.
-          </p>
-
-          <p>
-            You not only fear the worst for your colleagues but you also have an inexplicable sense of dread surrounding the expedition. Without support from the university anytime soon, you begin a rogue mission to find out what happened to the team. You make your way to Australia and find a fishing boat that is willing to drop you off and pick you back up after two days.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg mt-5">
-          <h2 class="text-center">Teaser Trailer</h2>
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-lg mt-5">
-          <h2 class="text-center">Demo Gameplay</h2>
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube-nocookie.com/embed/Ksy5YQKsUmk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center fs-3 mt-5">
-        <a href="https://store.steampowered.com/app/2179390/Dyer_Expedition/"  rel="noopener noreferrer" target="_blank">Wishlist on Steam <i class="fa-brands fa-steam"></i>!</a>
-      </div>
-      <div class="text-center fs-3 mt-2">
-        <a href="https://discord.gg/XXzPyCJECu" rel="noopener noreferrer" target="_blank">Discuss on Discord <i class="fa-brands fa-discord"></i>!</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="p-5 section section--with-background section-code">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg">
-          <h2>Custom Code</h2>
-
-          <p>
-            While we mainly focus on creating games, we'd also love to be part of your software project, even if it doesn't have to do with games at all!
-          </p>
-
-          <p>
-            Projects are or have been a part of include:
-            <ul>
-              <li>
-                <a href="https://www.mathearena.com" rel="noopener noreferrer" target="_blank">MatheArena & MatheArena Junior</a> &ndash; Learning math playfully.
-              </li>
-              <li>
-                <a href="https://www.thermocollect.at/" rel="noopener noreferrer" target="_blank">thermocollect&reg;</a> &ndash; Energy efficient building facades.
-              </li>
-            </ul>
-          </p>
-        </div>
-        <div class="col-lg d-none d-lg-block">
-          <img class="img-fluid" src="/images/keyboard.webp" alt="Keyboard with paw">
         </div>
       </div>
     </div>
