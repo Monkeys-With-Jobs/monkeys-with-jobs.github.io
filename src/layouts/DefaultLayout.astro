@@ -1,9 +1,10 @@
 ---
 import './main.scss';
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <title>Monkeys With Jobs</title>
     <meta charset="utf-8">
@@ -22,5 +23,6 @@ import Navbar from '../components/Navbar.astro';
   <body>
     <Navbar />
     <slot />
+    <Footer />
   </body>
 </html>
