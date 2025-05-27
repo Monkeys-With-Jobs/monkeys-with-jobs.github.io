@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#6D28D9', // Purple for game studio branding
-        secondary: '#4F46E5', // Indigo for accents
-        dark: '#121212',
-        darker: '#0A0A0A',
+        primary: '#f59e3e', // MWJ Orange
+        secondary: '#27282c', // MWJ Grey
+        dark: '#1a1b1f', // Slightly darker than MWJ Grey
+        darker: '#121214', // Even darker shade
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
