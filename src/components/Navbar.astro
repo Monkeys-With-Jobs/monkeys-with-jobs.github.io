@@ -1,37 +1,52 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
 const currentRoute = pathname.slice(1);
-const currentActiveNaivation = currentRoute.split('/')[0]
+const currentActiveNavigation = currentRoute.split('/')[0];
 ---
 
-<script>
-  import 'bootstrap/js/dist/collapse';
-</script>
-
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="/images/logo_no_text.svg" alt="Monkeys With Jobs Logo" width="30" height="24">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navbarToggler" class="collapse navbar-collapse">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class={`nav-link ${currentActiveNaivation == '' ? 'active' : null}`} aria-current={currentActiveNaivation == 'index' ? 'page' : null} href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class={`nav-link ${currentActiveNaivation == 'games' ? 'active' : null}`} aria-current={currentActiveNaivation == 'games' ? 'page' : null} href="/games">Games</a>
-        </li>
-        <li class="nav-item">
-          <a class={`nav-link ${currentActiveNaivation == 'jobs' ? 'active' : null}`} aria-current={currentActiveNaivation == 'jobs' ? 'page' : null} href="/jobs">Jobs</a>
-        </li>
-        <li class="nav-item">
-          <a class={`nav-link ${currentActiveNaivation == 'imprint' ? 'active' : null}`} aria-current={currentActiveNaivation == 'imprint' ? 'page' : null} href="/imprint">Imprint</a>
-        </li>
-      </ul>
+<header class="bg-dark border-b border-gray-800">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <a href="/" class="flex items-center space-x-2">
+        <img src="/images/logo_no_text.svg" alt="Monkeys With Jobs Logo" class="w-10 h-10">
+        <span class="font-display font-bold text-xl hidden sm:block">Monkeys With Jobs</span>
+      </a>
+      
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex space-x-8">
+        <a href="/" class={`font-medium ${currentActiveNavigation === '' ? 'text-primary' : 'text-gray-300 hover:text-white'}`}>Home</a>
+        <a href="/games" class={`font-medium ${currentActiveNavigation === 'games' ? 'text-primary' : 'text-gray-300 hover:text-white'}`}>Games</a>
+        <a href="/jobs" class={`font-medium ${currentActiveNavigation === 'jobs' ? 'text-primary' : 'text-gray-300 hover:text-white'}`}>Jobs</a>
+        <a href="/imprint" class={`font-medium ${currentActiveNavigation === 'imprint' ? 'text-primary' : 'text-gray-300 hover:text-white'}`}>Imprint</a>
+      </div>
     </div>
-  </div>
-</nav>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="md:hidden hidden pt-4">
+      <div class="flex flex-col space-y-4">
+        <a href="/" class={`font-medium px-2 py-1 rounded ${currentActiveNavigation === '' ? 'bg-primary/10 text-primary' : 'text-gray-300 hover:text-white'}`}>Home</a>
+        <a href="/games" class={`font-medium px-2 py-1 rounded ${currentActiveNavigation === 'games' ? 'bg-primary/10 text-primary' : 'text-gray-300 hover:text-white'}`}>Games</a>
+        <a href="/jobs" class={`font-medium px-2 py-1 rounded ${currentActiveNavigation === 'jobs' ? 'bg-primary/10 text-primary' : 'text-gray-300 hover:text-white'}`}>Jobs</a>
+        <a href="/imprint" class={`font-medium px-2 py-1 rounded ${currentActiveNavigation === 'imprint' ? 'bg-primary/10 text-primary' : 'text-gray-300 hover:text-white'}`}>Imprint</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
 

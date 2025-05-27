@@ -11,38 +11,65 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 </style>
 
 <DefaultLayout>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
-        </div>
-        <div class="col-lg-6">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <!-- Hero Section -->
+  <section class="relative py-16 md:py-24 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-b from-dark to-darker"></div>
+      <img src="/images/dyer-expedition/background.webp" alt="Background" class="object-cover w-full h-full opacity-40" />
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <img class="w-full max-w-md mx-auto mb-6" src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
+            <h1 class="sr-only">Dyer Expedition</h1>
+            
+            <div class="flex flex-wrap gap-4 mt-6">
+              <a href="https://store.steampowered.com/app/2179390/Dyer_Expedition/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors duration-300">
+                <i class="fa-brands fa-steam mr-2"></i> View on Steam
+              </a>
+              <a href="https://retzudo.itch.io/dyer-expedition" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-white/20 text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors duration-300">
+                <i class="fa-brands fa-itch-io mr-2"></i> View on Itch.io
+              </a>
+            </div>
+          </div>
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-full rounded-lg shadow-lg" src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <hr>
-
-      <p>
-        Dyer Expedition is a puzzle adventure game with light Lovecraftian horror elements. The story is inspired by Lovecraft's At the Mountains of Madness. It's 1931 and the protagonist (you) is a professor at the Miskatonic University whose colleagues have gone missing on an expedition to the Antarctic. The protagonist not only fears the worst for their colleagues but they also have an inexplicable sense of dread surrounding the expedition. Without support from the university anytime soon, you begin your rogue mission to find out what happened to them. You make your way to Australia and find a fishing boat that is willing to drop you off and pick you back up after two days. As you arrive at the shore you discover an abandoned base camp.
-      </p>
-
-      <hr>
-
-      <p>
-        <i class="fa-brands fa-steam"></i> Steam &ndash; <a href="https://store.steampowered.com/app/2179390/Dyer_Expedition/"  rel="noopener noreferrer" target="_blank">https://store.steampowered.com/app/2179390/Dyer_Expedition/</a>
-      </p>
-
-      <p>
-        <i class="fa-brands fa-itch-io"></i> Itch.io &ndash; <a href="https://retzudo.itch.io/dyer-expedition" rel="noopener noreferrer" target="_blank">https://retzudo.itch.io/dyer-expedition</a>
-      </p>
-
-      <p>Follow us on <a href="https://twitter.com/monkeyswithjobs" rel="noopener noreferrer" target="_blank">Twitter</a> or <a href="https://instagram.com/monkeyswithjobs" rel="noopener noreferrer" target="_blank">Instagram</a> and join our <a href="https://discord.gg/XXzPyCJECu" rel="noopener noreferrer" target="_blank">Discord Server</a> to get updates!</p>
+  </section>
+  
+  <!-- Game Description -->
+  <section class="py-16 bg-dark">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg prose-invert mx-auto">
+          <p class="text-xl leading-relaxed text-gray-300">
+            Dyer Expedition is a puzzle adventure game with light Lovecraftian horror elements. The story is inspired by Lovecraft's At the Mountains of Madness. It's 1931 and the protagonist (you) is a professor at the Miskatonic University whose colleagues have gone missing on an expedition to the Antarctic. The protagonist not only fears the worst for their colleagues but they also have an inexplicable sense of dread surrounding the expedition. Without support from the university anytime soon, you begin your rogue mission to find out what happened to them. You make your way to Australia and find a fishing boat that is willing to drop you off and pick you back up after two days. As you arrive at the shore you discover an abandoned base camp.
+          </p>
+          
+          <div class="my-10 border-t border-b border-gray-800 py-8">
+            <h2 class="text-2xl font-bold mb-6">Follow Our Progress</h2>
+            <p class="mb-4">
+              Stay updated with the latest news and development updates for Dyer Expedition by following us on social media:
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://twitter.com/monkeyswithjobs" rel="noopener noreferrer" target="_blank" class="inline-flex items-center text-primary hover:text-secondary">
+                <i class="fa-brands fa-twitter mr-2"></i> Twitter
+              </a>
+              <a href="https://instagram.com/monkeyswithjobs" rel="noopener noreferrer" target="_blank" class="inline-flex items-center text-primary hover:text-secondary">
+                <i class="fa-brands fa-instagram mr-2"></i> Instagram
+              </a>
+              <a href="https://discord.gg/XXzPyCJECu" rel="noopener noreferrer" target="_blank" class="inline-flex items-center text-primary hover:text-secondary">
+                <i class="fa-brands fa-discord mr-2"></i> Discord
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </DefaultLayout>

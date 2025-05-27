@@ -18,14 +18,41 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
 </style>
 
 <DefaultLayout>
-  <section class="vh-50 px-4 py-5 text-center d-flex justify-content-center align-items-center game game--dyer-expedition">
-    <div>
-      <img class="img-fluid d-block mx-auto mb-5" src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
-      <h1 class="display-5 fw-bold">
-        Dyer Expedition
-      </h1>
-      <div class="mx-auto">
-        <a href="/games/dyer-expedition" class="btn btn-secondary">Learn More</a>
+  <section class="py-16 bg-dark">
+    <div class="container mx-auto px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Games</h1>
+          <div class="h-1 w-20 bg-primary mx-auto"></div>
+          <p class="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
+            Explore our collection of immersive indie games created with passion and creativity.
+          </p>
+        </div>
+        
+        <!-- Game Card -->
+        <div class="bg-darker rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-800">
+          <div class="grid md:grid-cols-2">
+            <div class="p-8 flex flex-col justify-center">
+              <img src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition" class="w-full max-w-sm mx-auto mb-6">
+              <p class="text-gray-300 mb-6">
+                A puzzle adventure game with light Lovecraftian horror elements. The story is inspired by Lovecraft's At the Mountains of Madness.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a href="/games/dyer-expedition" class="inline-flex items-center justify-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors duration-300">
+                  Learn More
+                </a>
+                <a href="https://store.steampowered.com/app/2179390/Dyer_Expedition/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2 border border-white/20 text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors duration-300">
+                  <i class="fa-brands fa-steam mr-2"></i> Steam
+                </a>
+              </div>
+            </div>
+            <div class="bg-black/30">
+              <div class="aspect-w-16 aspect-h-9 h-full">
+                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
