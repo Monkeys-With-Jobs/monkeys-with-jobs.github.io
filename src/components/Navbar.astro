@@ -2,13 +2,15 @@
 const pathname = new URL(Astro.request.url).pathname;
 const currentRoute = pathname.slice(1);
 const currentActiveNavigation = currentRoute.split('/')[0];
+import { Image } from 'astro:assets';
+import logoNoText from '../assets/logo_no_text.svg';
 ---
 
 <header class="bg-secondary border-b border-gray-800">
   <nav class="container mx-auto px-4 py-4">
     <div class="flex items-center justify-between">
       <a href="/" class="flex items-center space-x-2">
-        <img src="/images/logo_no_text.svg" alt="Monkeys With Jobs Logo" class="w-10 h-10">
+        <Image src={logoNoText} alt="Monkeys With Jobs Logo" class="w-10 h-10" width={192} height={147} />
         <span class="font-display font-bold text-xl hidden sm:block">Monkeys With Jobs</span>
       </a>
       

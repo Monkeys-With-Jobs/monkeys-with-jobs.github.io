@@ -1,18 +1,17 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.svg';
+import logoWhite from '../assets/dyer-expedition/logo-white.svg';
+import background from '../assets/dyer-expedition/background.webp';
 ---
 
 <DefaultLayout>
   <!-- Hero Section -->
   <section class="relative py-20 md:py-32 overflow-hidden">
-    <div class="absolute inset-0 z-0 opacity-20">
-      <div class="absolute inset-0 bg-gradient-to-b from-secondary to-darker"></div>
-      <img src="/images/dyer-expedition/background.webp" alt="Background" class="object-cover w-full h-full opacity-30" />
-    </div>
-    
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
-        <img class="mx-auto mb-8 max-h-48" src="/images/logo.svg" alt="Monkeys With Jobs Logo">
+        <Image class="mx-auto mb-8 max-h-48" src={logo} alt="Monkeys With Jobs Logo" width={162} height={122} />
         
         <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">Creating Immersive Gaming Experiences</h1>
         
@@ -43,7 +42,7 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
         
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <img class="w-full max-w-md mx-auto" src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
+            <Image class="w-full max-w-md mx-auto" src={logoWhite} alt="Dyer Expedition Logo" width={680} height={514} />
             <p class="mt-6 text-gray-300">
               A puzzle adventure game with light Lovecraftian horror elements. The story is inspired by Lovecraft's At the Mountains of Madness.
             </p>

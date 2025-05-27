@@ -1,21 +1,8 @@
 ---
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import { Image } from 'astro:assets';
+import logoWhite from '../../assets/dyer-expedition/logo-white.svg';
 ---
-
-<style lang="scss">
-  .game {
-    img {
-      height: 20rem;
-    }
-
-    background-size: cover;
-    background-position: center;
-
-    &--dyer-expedition {
-      background-image: url("/images/dyer-expedition/background.webp");
-    }
-  }
-</style>
 
 <DefaultLayout>
   <section class="py-16 bg-secondary">
@@ -33,7 +20,7 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
         <div class="bg-darker rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-800">
           <div class="grid md:grid-cols-2">
             <div class="p-8 flex flex-col justify-center">
-              <img src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition" class="w-full max-w-sm mx-auto mb-6">
+              <Image src={logoWhite} alt="Dyer Expedition" class="w-full max-w-sm mx-auto mb-6" width={680} height={514} />
               <p class="text-gray-300 mb-6">
                 A puzzle adventure game with light Lovecraftian horror elements. The story is inspired by Lovecraft's At the Mountains of Madness.
               </p>

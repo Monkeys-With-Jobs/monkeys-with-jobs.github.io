@@ -1,5 +1,7 @@
 ---
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import { Image } from 'astro:assets';
+import logoWhite from '../../assets/dyer-expedition/logo-white.svg';
 import '@fortawesome/fontawesome-free/css/all.min.css'
 ---
 
@@ -13,16 +15,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 <DefaultLayout>
   <!-- Hero Section -->
   <section class="relative py-16 md:py-24 overflow-hidden">
-    <div class="absolute inset-0 z-0 opacity-30">
-      <div class="absolute inset-0 bg-gradient-to-b from-secondary to-darker"></div>
-      <img src="/images/dyer-expedition/background.webp" alt="Background" class="object-cover w-full h-full opacity-40" />
-    </div>
-    
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-7xl mx-auto">
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <img class="w-full max-w-md mx-auto mb-6" src="/images/dyer-expedition/logo-white.svg" alt="Dyer Expedition Logo">
+            <Image class="w-full max-w-md mx-auto mb-6" src={logoWhite} alt="Dyer Expedition Logo" width={680} height={514} />
             <h1 class="sr-only">Dyer Expedition</h1>
             
             <div class="flex flex-wrap gap-4 mt-6">
