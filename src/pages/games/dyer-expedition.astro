@@ -1,16 +1,10 @@
 ---
-import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import { Image } from 'astro:assets';
-import logoWhite from '../../assets/dyer-expedition/logo-white.svg';
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import logoWhite from '@assets/dyer-expedition/logo-white.svg';
+import YouTube from '@components/YouTube.astro';
 ---
-
-<style scoped>
-  iframe {
-    height: 100%;
-    width: 100%;
-  }
-</style>
 
 <DefaultLayout>
   <!-- Hero Section -->
@@ -29,7 +23,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
             </div>
           </div>
           <div class="aspect-video">
-            <iframe class="w-full h-full rounded-lg shadow-lg" src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <YouTube videoId="aoKi-mzx9n0" playLabel={"Dyer Expedition - Release Trailer"} className={"w-full h-full rounded-lg shadow-lg"}/>
           </div>
         </div>
       </div>

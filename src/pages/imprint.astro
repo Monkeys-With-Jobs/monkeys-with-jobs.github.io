@@ -1,7 +1,7 @@
 ---
-import DefaultLayout from "../layouts/DefaultLayout.astro";
 import { Image } from 'astro:assets';
-import logo from '../assets/logo.svg';
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import logo from '@assets/logo.svg';
 ---
 <DefaultLayout>
   <section class="py-16 bg-secondary">
@@ -9,22 +9,22 @@ import logo from '../assets/logo.svg';
       <div class="max-w-6xl mx-auto">
         <h1 class="text-4xl md:text-5xl font-bold mb-6 text-center">Imprint</h1>
         <div class="h-1 w-20 bg-primary mx-auto mb-10"></div>
-        
+
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-darker p-8 rounded-lg border border-gray-800">
             <h2 class="text-2xl font-bold mb-6">Monkeys With Jobs e.U.</h2>
-            
+
             <div class="space-y-4">
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Inhaber</h3>
                 <p>Christoph Willinger, MSc</p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Rechtsform</h3>
                 <p>Einzelunternehmen</p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Adresse</h3>
                 <address class="not-italic">
@@ -33,49 +33,49 @@ import logo from '../assets/logo.svg';
                   Österreich
                 </address>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Unternehmensgegenstand</h3>
                 <p>Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik</p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Mitgliedschaften</h3>
                 <p>Mitglied der WKOÖ</p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Gewerbeordnung</h3>
                 <p><a href="https://www.ris.bka.gv.at/" rel="noopener noreferrer" target="_blank">www.ris.bka.gv.at</a></p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Aufsichtsbehörde</h3>
                 <p>Bezirkshauptmannschaft Ried im Innkreis</p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">UID</h3>
                 <p>ATU78294515</p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Kontakt</h3>
                 <p><a href="mailto:hello@monkeyswithjobs.com">hello@monkeyswithjobs.com</a></p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Firmenbuchnummer</h3>
                 <p>FN 588686 s</p>
               </div>
-              
+
               <div>
                 <h3 class="text-sm font-medium text-gray-400">Firmenbuchgericht</h3>
                 <p>Landesgericht Ried im Innkreis</p>
               </div>
             </div>
           </div>
-          
+
           <div class="flex items-center justify-center">
             <Image src={logo} alt="Monkeys With Jobs Logo" class="max-w-xs w-full" width={162} height={122} />
           </div>

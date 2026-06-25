@@ -1,9 +1,10 @@
 ---
-import DefaultLayout from "../layouts/DefaultLayout.astro";
 import { Image } from 'astro:assets';
-import logo from '../assets/logo.svg';
-import logoWhite from '../assets/dyer-expedition/logo-white.svg';
-import background from '../assets/dyer-expedition/background.webp';
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import logo from '@assets/logo.svg';
+import logoWhite from '@assets/dyer-expedition/logo-white.svg';
+import background from '@assets/dyer-expedition/background.webp';
+import YouTube from '@components/YouTube.astro';
 ---
 
 <DefaultLayout>
@@ -56,10 +57,11 @@ import background from '../assets/dyer-expedition/background.webp';
             </div>
           </div>
           <div class="aspect-video">
-            <iframe class="w-full h-full rounded-lg shadow-lg" src="https://www.youtube-nocookie.com/embed/aoKi-mzx9n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <YouTube videoId="aoKi-mzx9n0" playLabel={"Dyer Expedition - Release Trailer"} className={"w-full h-full rounded-lg shadow-lg"}/>
           </div>
         </div>
       </div>
     </div>
   </section>
 </DefaultLayout>
+

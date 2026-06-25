@@ -1,0 +1,11 @@
+---
+import 'lite-youtube-embed/src/lite-yt-embed.css';
+
+const { videoId, playLabel, className } = Astro.props
+---
+
+<script>
+  import 'lite-youtube-embed'; // registers the <lite-youtube> custom element
+</script>
+
+<lite-youtube videoid={videoId} playlabel={playLabel} class={className}></lite-youtube>
