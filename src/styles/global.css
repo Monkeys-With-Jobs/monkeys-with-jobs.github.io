@@ -1,37 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #f59e3e;
+  --color-secondary: #27282c;
+  --color-dark: #1a1b1f;
+  --color-darker: #121214;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Montserrat", system-ui, sans-serif;
+}
 
 @layer base {
-  html {
-    @apply bg-secondary text-gray-100;
-  }
-  
-  body {
-    @apply min-h-screen flex flex-col;
-  }
-  
-  main {
-    @apply flex-grow;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display font-bold;
   }
-  
+
   h1 {
     @apply text-4xl md:text-5xl mb-6;
   }
-  
+
   h2 {
     @apply text-3xl md:text-4xl mb-4;
   }
-  
+
   h3 {
     @apply text-2xl md:text-3xl mb-3;
-  }
-  
-  a {
-    @apply text-primary hover:text-primary/80 transition-colors;
   }
 }

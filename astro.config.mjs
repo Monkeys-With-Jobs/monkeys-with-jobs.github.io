@@ -1,8 +1,10 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://monkeyswithjobs.com/',
-  integrations: [tailwind()],
+  site: "https://monkeyswithjobs.com/",
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
